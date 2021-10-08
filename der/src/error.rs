@@ -97,7 +97,7 @@ impl From<const_oid::Error> for Error {
 }
 
 #[cfg(feature = "std")]
-impl std::error::Error for ErrorKind {}
+impl std::error::Error for Error {}
 
 /// Error type.
 #[derive(Copy, Clone, Debug, Eq, PartialEq)]
